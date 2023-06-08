@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/styles.css" />
+  <title>Produtos</title>
+  <script src="/menu.js"></script>
+</head>
+
+<body>
+
+  <header>
+    <nav class="navBar">
+      <div class="divLogo">
+        <div>
+          <a href="/index.html"><img class="logo" src="/Midias/Imagens/logo.png" /></a>
+        </div>
+      </div>
+      <ul class="menu">
+        <li>
+          <a href="/">HOME</a>
+        </li>
+        <li>
+          <a href="/Filmes.html">FILMES</a>
+        </li>
+        <li>
+          <a href="/Produtos.html">PRODUTOS</a>
+        </li>
+        <li>
+          <a href="/Livros.html">LIVROS</a>
+        </li>
+        <li>
+          <a href="/Sobre.html">SOBRE</a>
+        </li>
+      </ul>
+      <img class="toggleButton" src="/Midias/Imagens/mago.png" >
+    </nav>
+    <ul class="toggleMenu">
+      <li>
+        <a href="/">HOME</a>
+      </li>
+      <li>
+        <a href="/Filmes.html">FILMES</a>
+      </li>
+      <li>
+        <a href="/Produtos.html">PRODUTOS</a>
+      </li>
+      <li>
+        <a href="/Livros.html">LIVROS</a>
+      </li>
+      <li>
+        <a href="/Sobre.html">SOBRE</a>
+      </li>
+    </ul>
+  </header>
+
+  <main class="mainProdutos">
+
+    <div id="myModal" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <h2>Preencha o formulário</h2>
+
+        <form>
+          <div class="form-div">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required>
+          </div>
+          <div class="form-div">
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+          <div class="form-div">
+            <label for="endereço">Endereço:</label>
+            <input type="text" id="endereço" name="endereço" required>
+          </div>
+          <div class="form-div">
+            <label for="cidade">Cidade:</label>
+            <input type="text" id="cidade" name="cidade" required>
+          </div>          
+          <div class="form-div">
+            <label for="card-number">Número do Cartão:</label>
+            <input type="text" id="card-number" name="card-number" required>
+          </div>          
+          <div class="form-div">
+            <label for="expiration-date">Data de Vencimento:</label>
+            <input type="text" id="expiration-date" name="expiration-date" placeholder="MM/AA" required>
+          </div>
+          <div class="form-div">
+            <label for="cvv">CVV:</label>
+            <input type="number" id="cvv" name="cvv" required>
+          </div>
+          <div class="form-div">
+            <input type="submit" value="COMPRAR">
+          </div>
+        </form>
+    </div>
+    </div>
+
+    <div class="produtos-container">
+      <div class="produtos">
+        <img src="/Midias/Produtos/molotom_grif.webp" alt="Blusa Moletom Grifinória red">
+        <h3>Moletom Grifinória Quadribol Red</h3>
+        <button class="bnt-alugar" onclick="openModal()">COMPRAR</button>
+      </div>
+      <div class="produtos">
+        <img src="/Midias/Produtos/BlusaMoletomGrifinoriaQuadribolHarryPotter-FRETEGRATIS_1024x10242x.jpg" alt="Blusa Moletom Grifinória white">
+        <h3>Moletom Grifinória Quadribol White</h3>
+        <button class="bnt-alugar" onclick="openModal()">COMPRAR</button>
+      </div>
+      <div class="produtos">
+        <img src="/Midias/Produtos/BlusaMoletomGrifinoriaQuadribolHarryPotter-FRETEGRATIS_4df15ffc-23af-4533-80fc-47bd4b8c4f64_1024x10242x.jpg" alt="Blusa Moletom Grifinória black">
+        <h3>Moletom Grifinória Quadribol Black</h3>
+        <button class="bnt-alugar" onclick="openModal()">COMPRAR</button>
+      </div>       
+      <div class="produtos">
+        <img src="/Midias/Produtos/jaqueta-harry-potter-sonserina-verde-moletom-college.jpg" alt="Jaqueta Sonserina">
+        <h3>Jaqueta Sonserina</h3>     
+        <button class="bnt-alugar" onclick="openModal()">COMPRAR</button>
+      </div>
+      <div class="produtos">
+        <img src="/Midias/Produtos/jaqueta-harry-potter-corvinal-azul-moletom-college.jpg" alt="Jaqueta Corvinal">
+        <h3>Jaqueta Corvinal</h3>
+        <button class="bnt-alugar" onclick="openModal()">COMPRAR</button>
+      </div>
+      <div class="produtos">
+        <img src="/Midias/Produtos/jaqueta-harry-potter-lufa-lufa-amarelo-moletom-college.jpg" alt="Jaqueta Lufa-Lufa">
+        <h3>Jaqueta Lufa-Lufa</h3>
+        <button class="bnt-alugar" onclick="openModal()">COMPRAR</button>
+      </div>
+      <div class="produtos">
+        <img src="/Midias/Produtos/2c977bbad319a9a55607439b6f0afe6d.jpg" alt="Pet yellow">
+        <h3>Moletom Grifinória</h3>
+        <button class="bnt-alugar" onclick="openModal()">COMPRAR</button>
+      </div>
+      <div class="produtos">
+        <img src="/Midias/Produtos/350b7c421332190e655b73071f32f25f.jpg" alt="Pet Sonserina">
+        <h3>Moletom Mapa do Maroto</h3>
+        <button class="bnt-alugar" onclick="openModal()">COMPRAR</button>
+      </div>
+      <div class="produtos">
+        <img src="/Midias/Produtos/59837d6cd0e157b2a813e6d455ba8ddb.jpg" alt="Pet blue">
+        <h3>Moletom Lufa-Lufa</h3>
+        <button class="bnt-alugar" onclick="openModal()">COMPRAR</button>
+      </div>
+      <div class="produtos">
+        <img src="/Midias/Produtos/1cafaa70f8a741c7afa73fe15bb48311.jpg" alt="Pet blue">
+        <h3>Moletom Corvinal</h3>
+        <button class="bnt-alugar" onclick="openModal()">COMPRAR</button>
+      </div>
+      <div class="produtos">
+        <img src="/Midias/Produtos/BlusaMoletomGrifinoriaQuadribolHarryPotter-FRETEGRATIS_eb3eba35-95aa-4122-905c-fb4b87498286_1024x1024@2x.webp" alt="Pet blue">
+        <h3>Moletom Howarts</h3>
+        <button class="bnt-alugar" onclick="openModal()">COMPRAR</button>
+      </div>
+      <div class="produtos">
+        <img src="/Midias/Produtos/br-11134201-23030-r10xm5pvd6nve4.jpg" alt="Pet blue">
+        <h3>Jaqueta Sonserina Grey</h3>
+        <button class="bnt-alugar" onclick="openModal()">COMPRAR</button>
+      </div>
+      <div class="produtos">
+        <img src="/Midias/Produtos/br-11134201-23030-rgmu57pvd6nvc8.jpg" alt="Pet blue">
+        <h3>Jaqueta Sonserina</h3>
+        <button class="bnt-alugar" onclick="openModal()">COMPRAR</button>
+      </div>
+      <div class="produtos">
+        <img src="/Midias/Produtos/06a902c310f47cdbcc8c6e0ca7241b72.jpg" alt="Pet blue">
+        <h3>Caneca Miniaturas</h3>
+        <button class="bnt-alugar" onclick="openModal()">COMPRAR</button>
+      </div>
+      <div class="produtos">
+        <img src="/Midias/Produtos/7ec1599399f5be28cd286766b775b24f.jpg" alt="Pet blue">
+        <h3>Caneca Anti-trouxas</h3>
+        <button class="bnt-alugar" onclick="openModal()">COMPRAR</button>
+      </div>
+      <div class="produtos">
+        <img src="/Midias/Produtos/e9f1119308f4665b6930c092968de6b2.jpg" alt="Pet blue">
+        <h3>Caneca Mapa do Maroto</h3> 
+        <button class="bnt-alugar" onclick="openModal()">COMPRAR</button>
+      </div>
+    </div>
+
+  </main>
+
+  <footer>
+    <span>
+      HARRY POTTER <img src="/Midias/Imagens/bola-magica.png"> 2023 TODOS OS DIREITOS RESERVADOS
+    </span>
+  </footer> 
+
+  <script>
+    function openModal() {
+      document.getElementById("myModal").style.display = "block";
+    }
+    
+    function closeModal() {
+      document.getElementById("myModal").style.display = "none";
+    }
+  </script>
+
+</body>
+
+</html>

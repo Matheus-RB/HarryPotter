@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/styles.css" />
+  <title>Livros</title>
+  <script src="/menu.js"></script>
+</head>
+
+<body>
+
+  <header>
+    <nav class="navBar">
+      <div class="divLogo">
+        <div>
+          <a href="/index.html"><img class="logo" src="/Midias/Imagens/logo.png" /></a>
+        </div>
+      </div>
+      <ul class="menu">
+        <li>
+          <a href="/index.html">HOME</a>
+        </li>
+        <li>
+          <a href="/Filmes.html">FILMES</a>
+        </li>
+        <li>
+          <a href="/Produtos.html">PRODUTOS</a>
+        </li>
+        <li>
+          <a href="/Livros.html">LIVROS</a>
+        </li>
+        <li>
+          <a href="/Sobre.html">SOBRE</a>
+        </li>
+      </ul>
+      <img class="toggleButton" src="/Midias/Imagens/mago.png" >
+    </nav>
+    <ul class="toggleMenu">
+      <li>
+        <a href="/index.html">HOME</a>
+      </li>
+      <li>
+        <a href="/Filmes.html">FILMES</a>
+      </li>
+      <li>
+        <a href="/Produtos.html">PRODUTOS</a>
+      </li>
+      <li>
+        <a href="/Livros.html">LIVROS</a>
+      </li>
+      <li>
+        <a href="/Sobre.html">SOBRE</a>
+      </li>
+    </ul>
+  </header>
+
+  <main class="mainFilmes">
+
+    <div id="myModal" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <h2>Preencha o formulário</h2>
+
+        <form>
+          <div class="form-div">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required>
+          </div>
+          <div class="form-div">
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+          <div class="form-div">
+            <label for="endereço">Endereço:</label>
+            <input type="text" id="endereço" name="endereço" required>
+          </div>
+          <div class="form-div">
+            <label for="cidade">Cidade:</label>
+            <input type="text" id="cidade" name="cidade" required>
+          </div>          
+          <div class="form-div">
+            <label for="card-number">Número do Cartão:</label>
+            <input type="text" id="card-number" name="card-number" required>
+          </div>          
+          <div class="form-div">
+            <label for="expiration-date">Data de Vencimento:</label>
+            <input type="text" id="expiration-date" name="expiration-date" placeholder="MM/AA" required>
+          </div>
+          <div class="form-div">
+            <label for="cvv">CVV:</label>
+            <input type="number" id="cvv" name="cvv" required>
+          </div>
+          <div class="form-div">
+            <input type="submit" value="COMPRAR">
+          </div>
+        </form>
+    </div>
+    </div>
+
+    <section class="livrosContainer">
+
+      <div class="livro-container">
+        <div class="livro">
+          <img src="/Midias/Livros/pedra.jpg" alt="Pedra Filosofal">
+          <h3>Harry Potter e a Pedra Filosofal</h3>
+          <button class="bnt-alugar" onclick="openModal()">COMPRAR</button>
+        </div>
+        <div class="livro">
+          <img src="/Midias/Livros/camara.jpg" alt="Câmara Secreta">
+          <h3>Harry Potter e a Câmara Secreta</h3>
+          <button class="bnt-alugar" onclick="openModal()">COMPRAR</button>
+        </div>
+        <div class="livro">
+          <img src="/Midias/Livros/prisioneiro.jpg" alt="Prisioneiro de Azkaban">
+          <h3>Harry Potter e o Prisioneiro de Azkaban</h3>
+          <button class="bnt-alugar" onclick="openModal()">COMPRAR</button>
+        </div>        
+        <div class="livro">
+          <img src="/Midias/Livros/calice.jpg" alt="Cálice de Fogo">
+          <h3>Harry Potter e o Cálice de Fogo</h3>
+          <button class="bnt-alugar" onclick="openModal()">COMPRAR</button>
+        </div>
+        <div class="livro">
+          <img src="/Midias/Livros/ordem.jpg" alt="Ordem da Fênix">
+          <h3>Harry Potter e a Ordem da Fênix</h3>
+          <button class="bnt-alugar" onclick="openModal()">COMPRAR</button>
+        </div>
+        <div class="livro">
+          <img src="/Midias/Livros/enigma.jpg" alt="Enigma do Príncipe">
+          <h3>Harry Potter e o Enigma do Príncipe</h3>
+          <button class="bnt-alugar" onclick="openModal()">COMPRAR</button>
+        </div>
+        <div class="livro">
+          <img src="/Midias/Livros/reliquias.jpg" alt="Relíquias da Morte">
+          <h3>Harry Potter e as Relíquias da Morte</h3>
+          <button class="bnt-alugar" onclick="openModal()">COMPRAR</button>
+        </div>
+      </div>
+
+    </section>
+  </main>
+
+  <footer>
+    <span>
+      HARRY POTTER <img src="/Midias/Imagens/bola-magica.png"> 2023 TODOS OS DIREITOS RESERVADOS
+    </span>
+  </footer> 
+
+  <script>
+    function openModal() {
+      document.getElementById("myModal").style.display = "block";
+    }
+    
+    function closeModal() {
+      document.getElementById("myModal").style.display = "none";
+    }
+  </script>
+
+</body>
+
+</html>

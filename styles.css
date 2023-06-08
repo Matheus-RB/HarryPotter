@@ -1,0 +1,444 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Barlow', sans-serif;
+}
+
+/* HEADER */
+
+.navBar {
+    display: flex;
+    background-color: black;
+    padding: 10px 0px 10px 0px;
+    width: 100%;
+}
+
+.navBar div {
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo {
+    width: 100%;
+}
+
+.navBar ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 70%;
+}
+
+.navBar li {
+    list-style: none;    
+}
+
+.navBar a {
+    text-decoration: none;
+    color: white;
+    transition: 500ms;
+}
+
+.navBar a:hover {
+    text-decoration: none;
+    color: darkmagenta;
+}
+
+.toggleButton {
+    display: none;
+    font-size: 20px;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+  
+.toggleMenu {
+    display: none;
+    list-style: none;
+    padding: 0;
+    background-color: black;
+}
+  
+.toggleMenu li {
+    text-align: center;
+    padding-bottom: 10px;
+}
+  
+.toggleMenu a {
+    text-decoration: none;
+    color: white;
+}
+
+.toggleMenu a {
+    text-decoration: none;
+    color: white;
+}
+
+/* FOOTER */
+
+footer {
+    background-color: black;
+    color: white;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* HOME */
+
+.homeContainer {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    background-color: #390101;
+}
+
+.backgrund-home img {
+    height: 100%;
+    width: 100%;
+}
+
+.corujaContainer {
+    height: 48px;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.side {
+    position: absolute;
+    right: 0;
+    display: flex;
+}
+
+.sidebar {
+    width: 200px;
+    visibility: collapse;
+    padding-top: 10px;
+}
+  
+.sidebar.active {
+    visibility: inherit;
+    width: 200px;
+    color: #ffffff;
+}
+
+.back2 {
+    display: none;
+}
+
+.back3 {
+    display: none;
+}
+
+.back4 {
+    display: none;
+}
+
+
+/* FILMES */
+
+.filmesContainer {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    background-color: #011900;
+}
+
+.backgrund-filmes img {
+    height: 100%;
+    width: 100%;
+}
+
+.propagandaFilme {
+    width: 220px;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    align-items: center;
+    background-color: #ffffff;
+}
+
+.propagandaFilme p {
+    margin-top: 20px;
+    font-size: 1.2rem;
+}
+
+.bnt-alugar {
+    padding: 5px;
+    border-radius: 5px;
+    background-color: #011900;
+    color: white;
+    cursor: pointer;
+    width: 90%;
+    margin-top: 20px;
+    border: none;
+}
+
+.bnt-alugar:hover {
+    background-color: #033102;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+  
+.filme {
+    width: 400px;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #ffffff;
+    text-align: center;
+    cursor: pointer;
+    transition: 500ms;
+}
+
+.filme:hover {
+    transform: scale(105%);
+}
+  
+.filme img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+  
+.filme h3 {
+  margin: 0;
+  font-size: 16px;
+  color: #333333;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+  
+.modal-content {
+    background-color: #ffffff;
+    margin: 5% auto;
+    padding: 20px;
+    border-radius: 5px;
+    max-width: 400px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+  
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+  
+.close:hover {
+    color: #000000;
+}
+
+.form-div {
+    margin-bottom: 20px;
+}
+  
+.form-div label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+  
+.form-div input, select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+}
+
+.form-div input[type="submit"] {
+    background-color: #011900;
+    cursor: pointer;
+    color: #ffffff;
+}
+
+.form-div input[type="submit"]:hover {
+    background-color: #033102;
+}
+
+/* PRODUTOS */
+
+.mainProdutos {
+    background-color: #ffcd1a;
+}
+
+.produtos-container {
+ display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.produtos {
+    width: 250px;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #ffffff;
+    text-align: center;
+    cursor: pointer;
+    transition: 500ms;
+}
+
+.produtos:hover {
+    transform: scale(105%);
+}
+
+.produtos img {
+    width: 200px;
+}
+
+.produtos button {
+    background-color: black;
+    color: white;
+    padding: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    border: none;
+}
+
+.produtos button:hover {
+    background-color: #292828;
+} 
+  
+/* Livros */
+
+.livrosContainer {
+    background-color: #00132e;
+}
+
+.livro-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+  
+.livro {
+    width: 400px;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #ffffff;
+    text-align: center;
+    cursor: pointer;
+    transition: 500ms;
+}
+
+.livro:hover {
+    transform: scale(103%);
+}
+
+.livro img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+  
+.livro h3 {
+  margin: 0;
+  font-size: 16px;
+  color: #333333;
+}
+
+/* SOBRE */
+
+.mainSobre {
+    background-color: #873535;
+    padding: 0;
+    color: #ffffff;
+}
+
+.texto {
+    font-size: 1.5rem;
+}
+
+.texto p { 
+    padding: 20px;
+}
+
+th, td {
+    border: 1px solid white;
+    padding: 8px;
+}
+
+table {
+    padding: 2rem;
+}
+
+.tituloTable {
+    text-align: center;
+}
+
+@media screen and (max-width: 795px) {
+    .back1 {
+        display: none;
+    }
+    .back2 {
+        display: initial;
+    }
+    .propagandaFilme {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .back2 {
+        display: none;
+    }
+    .back3 {
+        display: initial;
+    }
+    .toggleButton {
+        display: initial;
+        color: white;
+    }   
+    .menu {
+        display: none;
+    }
+    .navBar div {
+        width: 50%;
+        justify-content: flex-start;
+    }
+    .navBar {
+        justify-content: space-evenly;
+    }
+    footer {
+        font-size: .7rem;
+    }
+    
+}
+
+@media screen and (max-width: 480px) {
+    .back3 {
+        display: none;
+    }
+    .back4 {
+        display: initial;
+    }
+    .homeContainer {
+        background-color: #ffcd1a;
+    }
+    .filme {
+        width: 300px;
+    }
+}

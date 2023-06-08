@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/styles.css" />
+  <title>Home</title>
+  <script src="/menu.js"></script>
+</head>
+
+<body>
+
+  <header>
+  <nav class="navBar">
+    <div class="divLogo">
+      <div>
+        <a href="/index.html"><img class="logo" src="/Midias/Imagens/logo.png" /></a>
+      </div>
+    </div>
+    <ul class="menu">
+      <li>
+        <a href="/index.html">HOME</a>
+      </li>
+      <li>
+        <a href="/Filmes.html">FILMES</a>
+      </li>
+      <li>
+        <a href="/Produtos.html">PRODUTOS</a>
+      </li>
+      <li>
+        <a href="/Livros.html">LIVROS</a>
+      </li>
+      <li>
+        <a href="/Sobre.html">SOBRE</a>
+      </li>
+    </ul>
+    <img class="toggleButton" src="/Midias/Imagens/mago.png" >
+  </nav>
+  <ul class="toggleMenu">
+    <li>
+      <a href="/index.html">HOME</a>
+    </li>
+    <li>
+      <a href="/Filmes.html">FILMES</a>
+    </li>
+    <li>
+      <a href="/Produtos.html">PRODUTOS</a>
+    </li>
+    <li>
+      <a href="/Livros.html">LIVROS</a>
+    </li>
+    <li>
+      <a href="/Sobre.html">SOBRE</a>
+    </li>
+  </ul>
+</header>
+
+  <main class="mainHome">
+
+    <section class="homeContainer">
+
+      <div class="backgrund-home">
+        <img class="back1" src="/Midias/Imagens/wall_23.jpg" alt="backgrund-home" >
+        <img class="back2" src="/Midias/Imagens/wallpaperflare.com_wallpaper.jpg" alt="backgrund-home" >
+        <img class="back3" src="/Midias/Imagens/6b2edb49d3425fb753696aa28ee02417.jpg" alt="backgrund-home" >
+        <img class="back4" src="/Midias/Imagens/wall_22.jpg" alt="backgrund-home" >
+      </div>
+
+      <div class="side">            
+    
+        <aside class="sidebar">
+          <span>            
+            Bem-vindo ao incrível mundo de Harry Potter! Neste site dedicado à famosa saga do
+            bruxinho mais adorado do planeta, você encontrará um universo repleto de magia,
+            aventura e emoção.
+          </span>
+        </aside>
+
+        <div class="corujaContainer">
+          <img id="btn-sidebar" class="coruja" src="/Midias/Imagens/icons8-hedwig.svg" />
+        </div>
+
+      </div>    
+
+    </section>
+  </main>
+
+  <footer>
+    <span>
+      HARRY POTTER <img src="/Midias/Imagens/bola-magica.png"> 2023 TODOS OS DIREITOS RESERVADOS
+    </span>
+  </footer>
+
+  <script>
+    document.getElementById("btn-sidebar").addEventListener("click", function() {
+      var sidebar = document.querySelector(".sidebar");
+      sidebar.classList.toggle("active");
+    });
+  </script>  
+
+</body>
+
+</html>
